@@ -1,0 +1,31 @@
+body{
+    background: linear-gradient(
+      to bottom,
+      #5d9634,
+      #5d9634 50%,
+      #538c2b 50%,
+      #89dca3
+      );
+
+background-size: 100% 20px;
+}
+
+@keyframes Clock {
+  0% {transform: translate(0);}
+  20% {transform: translate(-2px, 2px);}
+  40% {transform: translate(-2px, -2px);}
+  60% {transform: translate(2px,2px);}
+  80% {transform: translate(2px, -2px);}
+  100% {transform: translate(0);}
+  }
+
+  .time {
+    width: 100px;
+    height: 100px;
+    background:  url(Clock/Clock_.png) center center / 100% no-repeat;
+    animation: Clock 0.3s linear infinite both;
+  }
+
+.time:hover {
+  animation-play-state: paused;
+}
